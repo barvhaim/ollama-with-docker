@@ -19,7 +19,7 @@ This project provides a containerized setup for running [Ollama](https://ollama.
 
 1. Clone this repository:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/barvhaim/ollama-with-docker.git
    cd ollama-with-docker
    ```
 
