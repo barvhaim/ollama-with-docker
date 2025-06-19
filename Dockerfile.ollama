@@ -1,0 +1,11 @@
+FROM ollama/ollama:latest
+
+# Install curl for healthchecks
+RUN apt-get update \
+ && apt-get install -y curl \
+ && rm -rf /var/lib/apt/lists/*
+
+COPY run_ollama.sh /usr/local/bin/run_ollama.sh
+RUN chmod +x /usr/local/bin/run_ollama.sh
+
+ENTRYPOINT ["/usr/local/bin/run_ollama.sh"]
